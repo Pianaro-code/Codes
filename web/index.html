@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radar RH + SST</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark">R</span><div><strong>Radar RH + SST</strong><small>central editorial</small></div></div>
+      <div class="live"><span></span> operação local <b id="publishState">revisão ativa</b></div>
+    </header>
+
+    <section class="hero">
+      <div><p class="eyebrow">PAINEL DE CONTEÚDO</p><h1>O que está<br><em>movendo o trabalho.</em></h1><p class="intro">Pesquise sinais importantes de Recursos Humanos e Saúde e Segurança do Trabalho. Transforme informação em posts com contexto.</p></div>
+      <div class="hero-note"><span>01</span><p>coleta<br><b>curadoria</b><br>publicação</p></div>
+    </section>
+
+    <section class="actions">
+      <button class="primary" data-action="collect"><span>↗</span> Buscar novidades</button>
+      <button data-action="draft"><span>✦</span> Preparar rascunhos</button>
+      <button class="publish" data-action="publish"><span>◎</span> Publicar selecionado</button>
+      <p id="notice" role="status">Pronto para começar.</p>
+    </section>
+
+    <section class="metrics"><div><span>NOTÍCIAS NO RADAR</span><strong id="newsCount">0</strong></div><div><span>EM REVISÃO</span><strong id="reviewCount">0</strong></div><div><span>APROVADOS</span><strong id="approvedCount">0</strong></div><div><span>FONTES RSS</span><strong id="feedCount">0</strong></div></section>
+
+    <div class="content-grid">
+      <section><div class="section-head"><div><p class="eyebrow">RADAR RECENTE</p><h2>Notícias capturadas</h2></div><button class="refresh" id="refresh">Atualizar ↻</button></div><div id="newsList" class="news-list"></div></section>
+      <aside><div class="section-head"><div><p class="eyebrow">SALA DE EDIÇÃO</p><h2>Rascunhos</h2></div></div><div id="draftList" class="draft-list"></div></aside>
+    </div>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
